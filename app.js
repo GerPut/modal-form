@@ -19,9 +19,7 @@ window.addEventListener('click', e =>
   e.target == modal ? modal.classList.remove('show-modal') : false
 );
 
-
-
-// Validation
+//Form  Validation
 
 //Variables
 
