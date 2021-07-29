@@ -6,6 +6,7 @@
   --primary-color: #424645;
   --secondary-color: #FFB2CE;
   --third-color: #363636;
+  --fourth-color: #fff;
 }
 
 * {
@@ -13,11 +14,11 @@
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   margin: 0;
   transition: transform 0.3s ease;
   background-color: var(--third-color);
-  color: #fff;
+  color: var(--fourth-color);
   overflow: hidden;
 }
 
@@ -28,7 +29,7 @@ body.show-nav {
 nav {
   background-color: var(--primary-color);
   border-right: 2px solid var(--secondary-color);
-  color: #fff;
+  color: var(--fourth-color);
   position: fixed;
   top: 0;
   left: 0;
@@ -52,6 +53,7 @@ nav ul {
 nav ul li {
   border-bottom: 2px solid var(--secondary-color);
   padding: 20px;
+  letter-spacing: 1px;
 }
 
 nav ul li:first-of-type {
@@ -59,7 +61,7 @@ nav ul li:first-of-type {
 }
 
 nav ul li a {
-  color: #fff;
+  color: var(--fourth-color);
   text-decoration: none;
 }
 
@@ -69,7 +71,7 @@ nav ul li a:hover {
 
 header {
   background-color: var(--primary-color);
-  color: #fff;
+  color: var(--fourth-color);
   position: relative;
   padding: 40px 15px;
   text-align: center;
@@ -90,13 +92,15 @@ header h1 {
 
 header p {
   margin: 20px 0;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
 }
 
 button, input[type='submit'] {
   background-color: var(--secondary-color);
   border: 0;
   border-radius: 5px;
-  color: #fff;
+  color: var(--fourth-color);
   cursor: pointer;
   padding: 10px 12px;
 }
@@ -130,6 +134,7 @@ button:focus {
 
 .numbers {
   margin-top: 60px;
+  letter-spacing: -18px;
   font-size: 500px;
   font-weight: bold;
   color: var(--primary-color);
@@ -154,8 +159,10 @@ button:focus {
 }
 
 .modal {
-  font-family: 'Lato', sans-serif;
-  background-color: #fff;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 200;
+  letter-spacing: 1px;
+  background-color: var(--fourth-color);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   position: absolute;
   overflow: hidden;
@@ -170,7 +177,7 @@ button:focus {
 
 .modal-header {
   background: var(--primary-color);
-  color: #fff;
+  color: var(--fourth-color);
   padding: 15px;
 }
 
@@ -186,7 +193,7 @@ button:focus {
 
 .modal-content {
   padding: 20px;
-  color: #000;
+  color: var(--third-color);
   display: flex;
   flex-direction: column;
   justify-content: space-around
@@ -205,6 +212,10 @@ button:focus {
   border: 1px solid black;
   padding: 10px;
   width: 100%;
+}
+
+input:focus {
+  outline: var(--secondary-color);
 }
 
 div.register:first-child {
@@ -244,7 +255,9 @@ div.register:first-child {
 }
 
 .submit-btn {
-  color: var(--primary-color)
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--third-color)!important;
 }
 
 @keyframes modalopen {
