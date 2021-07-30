@@ -13,10 +13,6 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow-x: hidden;
-}
-
 body {
   font-family: 'Oswald', sans-serif;
   margin: 0;
