@@ -6,6 +6,7 @@ const modal = document.getElementById('modal');
 // Toggle nav
 toggle.addEventListener('click', () =>
   document.body.classList.toggle('show-nav')
+
 );
 
 // Show modal
@@ -53,9 +54,6 @@ function validateEmail(email) {
   const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
-
-
-
 
 //Evenlisteners
 form.addEventListener('submit', (e) => {
